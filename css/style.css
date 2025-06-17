@@ -1,0 +1,245 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Body Styling - Coffee Theme */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(rgba(255, 248, 240, 0.95), rgba(255, 248, 240, 0.95)), 
+                url('https://images.unsplash.com/photo-1445116572660-236099ec97a0') no-repeat center center fixed;
+    background-size: cover;
+    color: #5C3A21;
+    padding: 0 20px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header - Coffee Brown */
+  header {
+    background-color: rgba(111, 78, 55, 0.9); /* Coffee brown */
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #D4AF37;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  header h1 {
+    color: #FFF8F0; /* Cream color */
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+    animation: fadeInDown 1s ease;
+  }
+  
+  /* Navigation - Coffee Theme */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #FFF8F0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(92, 58, 33, 0.7);
+  }
+  
+  nav a:hover {
+    color: #D4AF37;
+    background-color: rgba(92, 58, 33, 0.9);
+    transform: scale(1.05);
+  }
+  
+  /* Sections Styling - Coffee Cards */
+  section {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 900px;
+    background-color: rgba(255, 248, 240, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease;
+    border: 1px solid #D2B48C; /* Light coffee border */
+  }
+  
+  section h2 {
+    font-size: 2.2em;
+    color: #6F4E37; /* Coffee brown */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  section p {
+    font-size: 1.2em;
+    color: #5C3A21;
+    margin-bottom: 15px;
+  }
+  
+  /* Menu Styling - Coffee Items */
+  #menu {
+    text-align: center;
+  }
+  
+  .menu-section {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: rgba(255, 248, 240, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #D2B48C;
+  }
+  
+  .menu-section h3 {
+    font-size: 1.6em;
+    color: #6F4E37;
+    border-bottom: 2px dashed #BC8F5F;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .menu-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-section li {
+    margin: 12px 0;
+    font-size: 1.15em;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background-color: rgba(210, 180, 140, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-section li:hover {
+    background-color: rgba(210, 180, 140, 0.4);
+    transform: translateX(5px);
+  }
+  
+  /* Contact Info Styling */
+  #contact p {
+    font-size: 1.15em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  strong {
+    color: #6F4E37;
+  }
+  
+  /* Form Styling - Coffee Colors */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 248, 240, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border: 1px solid #D2B48C;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6F4E37;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #BC8F5F;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: rgba(255, 248, 240, 0.7);
+  }
+  
+  button {
+    background-color: #6F4E37;
+    color: #FFF8F0;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  button:hover {
+    background-color: #5C3A21;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  @keyframes fadeInDown {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    section {
+      padding: 20px;
+      margin: 30px auto;
+    }
+  
+    header h1 {
+      font-size: 2.2em;
+    }
+  
+    .menu-section li {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 0 10px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    section h2 {
+      font-size: 1.8em;
+    }
+    
+    .menu-section h3 {
+      font-size: 1.4em;
+    }
+  }
