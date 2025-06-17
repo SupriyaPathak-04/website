@@ -243,3 +243,9 @@ body, h1, h2, h3, p, ul {
       font-size: 1.4em;
     }
   }
+  img.hero {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
