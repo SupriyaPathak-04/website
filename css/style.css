@@ -261,3 +261,35 @@ body, h1, h2, h3, p, ul {
     height: 50vh; /* Shorter on mobile */
   }
 }
+/* Mobile Nav Styles */
+.mobile-nav { display: none; }
+
+@media (max-width: 600px) {
+  .desktop-nav { display: none; } /* Hide desktop nav */
+  .mobile-nav { display: block; } /* Show mobile nav */
+  #menu-toggle { display: none; } /* Hide checkbox */
+  .menu { 
+    display: none;
+    background: #f8f8f8;
+    padding: 1rem;
+  }
+  #menu-toggle:checked ~ .menu { display: block; } /* Show menu when checked */
+  .hamburger { 
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+}
+/* Force single-column layout on mobile (except home) */
+@media (max-width: 600px) {
+  body:not(.home-page) .menu-grid { 
+    grid-template-columns: 1fr !important;
+  }
+  body:not(.home-page) .menu-item {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+/* Ensure home page stays desktop-style */
+.home-page .desktop-nav { display: block; }
+.home-page .mobile-nav { display: none; }
